@@ -95,7 +95,8 @@ Below are the screenshots and data grid verifications for the records inserted i
 
 
 #### 4️⃣ `ORDER_ITEMS` Table Data (25 Line Items)
-![ORDER_ITEMS Data](./screenshots/order_items_data.png)
+<img width="350" height="317" alt="Screenshot 2026-10-07 182612" src="https://github.com/user-attachments/assets/d2b6e170-2dcd-43d5-95ba-718b98d9f84e" />
+
 
 
 ---
