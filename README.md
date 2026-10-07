@@ -79,43 +79,7 @@ To resolve these questions, a relational data schema was constructed:
                                                           +------------------+
 ```
 
-### 📦 Product Catalog (Rwandan Products)
 
-| Product ID | Product Name | Category | Unit Price (RWF) |
-| :--- | :--- | :--- | :--- |
-| 1 | Amata 1L (Milk) | Dairy | 1,500.00 |
-| 2 | Amavuta 500g (Butter) | Dairy | 4,250.00 |
-| 3 | Umugati (Bread) | Bakery | 3,500.00 |
-| 4 | Igitoki (Banana Bunch) | Produce | 1,250.00 |
-| 5 | Umuceri 5kg (Rice) | Grocery | 12,000.00 |
-| 6 | Amashaza 1kg (Peas) | Grocery | 8,750.00 |
-| 7 | Fanta 1L | Beverages | 2,800.00 |
-| 8 | Amazi x6 (Water) | Beverages | 4,600.00 |
-
----
-
-## 📸 3. Screenshots & Database Proof of Execution
-
-### 🔌 3.1 Connection & Database Setup in Oracle SQL Developer
-* **Connection Details**: Oracle SQL Developer connected to Oracle Database instance (`SunriseDB` on `localhost:1521/FREE`).
-
-![Oracle Connection Setup](./screenshots/oracle_connection_setup.png)
-
----
-
-### 🖥️ 3.2 SQL Developer Workspace & Active Connection
-* **Connected Workspace**: Connection established successfully with active SQL Worksheet.
-
-![Oracle SQL Developer Connected](./screenshots/oracle_sqldeveloper_connected.png)
-
----
-
-### 📁 3.3 Database Tables Hierarchy
-* **Schema Object Explorer**: Displaying database tables under `SunriseDB`.
-
-![SQL Developer Tables Tree](./screenshots/sqldeveloper_tables_tree.png)
-
----
 
 ### 📐 3.4 Table Column Definitions (`ORDER_ITEMS` Structure)
 * **Table Design**: Data types and constraints for `ORDER_ITEMS` (`ORDER_ITEM_ID`, `ORDER_ID`, `PRODUCT_ID`, `QUANTITY`).
