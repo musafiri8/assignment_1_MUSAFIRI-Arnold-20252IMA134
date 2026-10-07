@@ -340,7 +340,7 @@ ORDER BY customer_name, order_date;
 
 ---
 
-## 🛠️ 5. Technical Challenges & Resolutions
+##  5. Technical Challenges & Resolutions
 
 1. **Challenge 1: Foreign Key Table Drop Order in Oracle SQL Developer**
    * *Issue*: Executing standard `DROP TABLE customers;` fails with `ORA-02449: unique/primary keys in table referenced by enabled foreign keys` if dependent child tables (`orders`, `order_items`) exist.
