@@ -1,6 +1,6 @@
-# PL/SQL Assignment One - Sunrise Supermarket Database Analysis
 
-## 👤 Student Information & Submission Details
+
+## 👤 Student Information 
 * **Student Name:** MUSAFIRI Arnold
 * **Student ID:** 20252IMA134
 * **Academic Group:** Group I (Monday Group I)
