@@ -4,10 +4,7 @@
 * **Student Name:** MUSAFIRI Arnold
 * **Student ID:** 20252IMA134
 * **Academic Group:** Group I (Monday Group I)
-* **Repository Name:** `assignment_1_musafiri_arnold-20252IMA134`
-* **DBMS & Environment:** Oracle SQL Developer Version 26.2.0.186.2220 (Oracle Enterprise Edition / PL/SQL Database)
-* **Currency Unit:** Rwandan Francs (RWF / Frw)
-* **Submission Deadline:** September 23, 2026, 5:00 PM
+
 
 ---
 
@@ -43,16 +40,7 @@ Key deliverables completed in this repository:
 
 ---
 
-## 🏢 2. Business Scenario & Data Architecture
 
-### 🏬 Business Context
-**Sunrise Supermarket** operates as a retail supermarket chain selling daily essentials, fresh produce, beverages, and household goods across major urban hubs in Rwanda. Management identified key decision-making blind spots:
-* Who are the most loyal and highest-value customers in Rwanda?
-* Which product categories generate consistent basket sizes in Rwandan Francs (RWF)?
-* How is overall revenue accumulating over the operational quarter?
-* How frequently do repeat customers return to place subsequent orders?
-
-To resolve these questions, a relational data schema was constructed:
 
 ### 📐 Database Schema & Entity Relationships
 
