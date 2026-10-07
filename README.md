@@ -86,18 +86,8 @@ Below are the screenshots and data grid verifications for the records inserted i
 
 
 #### 2️⃣ `PRODUCTS` Table Data (8 Rwandan Products)
-![PRODUCTS Data](./screenshots/products_data.png)
+<img width="301" height="246" alt="Screenshot 2026-10-07 182238" src="https://github.com/user-attachments/assets/bd1c6e6e-3e79-4c7c-946c-b780d7692515" />
 
-| PRODUCT_ID | PRODUCT_NAME | CATEGORY | PRICE (RWF) |
-| :--- | :--- | :--- | :--- |
-| 1 | Amata 1L | Dairy | 1,500.00 |
-| 2 | Amavuta 500g | Dairy | 4,250.00 |
-| 3 | Umugati | Bakery | 3,500.00 |
-| 4 | Igitoki (Bunch) | Produce | 1,250.00 |
-| 5 | Umuceri 5kg | Grocery | 12,000.00 |
-| 6 | Amashaza 1kg | Grocery | 8,750.00 |
-| 7 | Fanta 1L | Beverages | 2,800.00 |
-| 8 | Amazi x6 | Beverages | 4,600.00 |
 
 #### 3️⃣ `ORDERS` Table Data (15 Orders)
 ![ORDERS Data](./screenshots/orders_data.png)
