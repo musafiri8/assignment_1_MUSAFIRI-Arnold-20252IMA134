@@ -6,11 +6,9 @@
 * **Academic Group:** Group I (Monday Group I)
 
 
----
 
-## 📌 1. Executive Summary & Quick Start
 
-### 📝 Summary of Work Done
+###  1 Summary of Work Done
 This project implements a relational database solution and advanced analytical query suite for **Sunrise Supermarket**, using **Rwandan Francs (RWF)** as the monetary currency, **authentic Rwandan customer names**, and **Rwandan product names**. The objective is to assist supermarket executive management in understanding customer purchasing behavior, product category performance, repeat ordering habits, and temporal sales revenue trends.
 
 Key deliverables completed in this repository:
@@ -24,7 +22,7 @@ Key deliverables completed in this repository:
 
 ---
 
-### 🚀 How to Run the Script in Oracle SQL Developer
+### 2 How to Run the Script in Oracle SQL Developer
 
 1. **Prerequisites**:
    * Oracle SQL Developer (Version 26.2.0.186.2220 or compatible).
@@ -42,7 +40,7 @@ Key deliverables completed in this repository:
 
 
 
-### 📐 Database Schema & Entity Relationships
+### 3 Database Schema & Entity Relationships
 
 ```
 +------------------+         +------------------+
@@ -69,14 +67,14 @@ Key deliverables completed in this repository:
 
 
 
-### 📐 3.4 Table Column Definitions (`ORDER_ITEMS` Structure)
+### 3.1 Table Column Definitions (`ORDER_ITEMS` Structure)
 * **Table Design**: Data types and constraints for `ORDER_ITEMS` (`ORDER_ITEM_ID`, `ORDER_ID`, `PRODUCT_ID`, `QUANTITY`).
 
 ![Order Items Table Structure](./screenshots/order_items_table_structure.png)
 
 ---
 
-### 📊 3.5 Inserted Data Screenshots (Database Verification)
+###  3.2 Inserted Data Screenshots (Database Verification)
 
 Below are the screenshots and data grid verifications for the records inserted into each database table:
 
@@ -101,7 +99,7 @@ Below are the screenshots and data grid verifications for the records inserted i
 
 ---
 
-## 📊 4. Detailed Query Documentation & Business Interpretation
+##  4. Detailed Query Documentation & Business Interpretation
 
 ---
 
