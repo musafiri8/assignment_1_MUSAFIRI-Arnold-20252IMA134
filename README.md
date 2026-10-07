@@ -83,14 +83,7 @@ Below are the screenshots and data grid verifications for the records inserted i
 #### 1️⃣ `CUSTOMERS` Table Data (6 Rwandan Customers)
 ![CUSTOMERS Data](./screenshots/customers_data.png)
 
-| CUSTOMER_ID | CUSTOMER_NAME | EMAIL | CITY |
-| :--- | :--- | :--- | :--- |
-| 1 | Mugisha Keza | mugishakeza@gmail.com | Kigali |
-| 2 | Habimana Jean | habimanajean@gmail.com | Musanze |
-| 3 | Uwase Divine | uwasedivine@gmail.com | Rubavu |
-| 4 | Manzi Eric | manzieric@gmail.com | Huye |
-| 5 | Ishimwe Chantal | ishimwechantal@gmail.com | Kayonza |
-| 6 | Niyonzima Patrick | niyonzimapatrick@gmail.com | Rusizi |
+
 
 #### 2️⃣ `PRODUCTS` Table Data (8 Rwandan Products)
 ![PRODUCTS Data](./screenshots/products_data.png)
