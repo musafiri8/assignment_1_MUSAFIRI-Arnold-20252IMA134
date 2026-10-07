@@ -1,4 +1,4 @@
-## PL/SQL Assignment One - Sunrise Supermarket Database Analysis
+# PL/SQL Assignment One - Sunrise Supermarket Database Analysis
 
 ## 👤 Student Information & Submission Details
 * **Student Name:** MUSAFIRI Arnold
@@ -579,9 +579,3 @@ ORDER BY customer_name, order_date;
 
 ---
 
-## ✒️ 6. Declaration
-I hereby declare that this SQL script and assignment documentation were crafted independently using Oracle SQL Developer 26.2.0.186.2220 for PL/SQL Assignment One.
-
-**Student Name:** MUSAFIRI Arnold  
-**Student ID:** 20252IMA134  
-**Date:** September 2026
