@@ -1,4 +1,4 @@
-# PL/SQL Assignment One - Sunrise Supermarket Database Analysis
+## PL/SQL Assignment One - Sunrise Supermarket Database Analysis
 
 ## 👤 Student Information & Submission Details
 * **Student Name:** MUSAFIRI Arnold
