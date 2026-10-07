@@ -157,54 +157,11 @@ Below are the screenshots and data grid verifications for the records inserted i
 #### 3️⃣ `ORDERS` Table Data (15 Orders)
 ![ORDERS Data](./screenshots/orders_data.png)
 
-| ORDER_ID | CUSTOMER_ID | ORDER_DATE |
-| :--- | :--- | :--- |
-| 101 | 1 | 2026-01-05 |
-| 102 | 2 | 2026-01-08 |
-| 103 | 1 | 2026-01-19 |
-| 104 | 3 | 2026-02-02 |
-| 105 | 4 | 2026-02-10 |
-| 106 | 2 | 2026-02-14 |
-| 107 | 1 | 2026-03-01 |
-| 108 | 5 | 2026-03-05 |
-| 109 | 3 | 2026-03-18 |
-| 110 | 2 | 2026-04-02 |
-| 111 | 4 | 2026-04-15 |
-| 112 | 1 | 2026-04-22 |
-| 113 | 3 | 2026-05-06 |
-| 114 | 5 | 2026-05-20 |
-| 115 | 2 | 2026-06-03 |
+
 
 #### 4️⃣ `ORDER_ITEMS` Table Data (25 Line Items)
 ![ORDER_ITEMS Data](./screenshots/order_items_data.png)
 
-| ORDER_ITEM_ID | ORDER_ID | PRODUCT_ID | QUANTITY |
-| :--- | :--- | :--- | :--- |
-| 1 | 101 | 1 | 4 |
-| 2 | 101 | 3 | 2 |
-| 3 | 102 | 5 | 1 |
-| 4 | 102 | 7 | 3 |
-| 5 | 103 | 2 | 2 |
-| 6 | 103 | 4 | 6 |
-| 7 | 104 | 6 | 1 |
-| 8 | 104 | 8 | 2 |
-| 9 | 105 | 1 | 6 |
-| 10 | 105 | 3 | 1 |
-| 11 | 106 | 5 | 2 |
-| 12 | 107 | 7 | 2 |
-| 13 | 107 | 2 | 1 |
-| 14 | 108 | 4 | 10 |
-| 15 | 108 | 8 | 1 |
-| 16 | 109 | 6 | 2 |
-| 17 | 109 | 1 | 3 |
-| 18 | 110 | 3 | 3 |
-| 19 | 111 | 5 | 1 |
-| 20 | 111 | 7 | 4 |
-| 21 | 112 | 8 | 3 |
-| 22 | 112 | 4 | 4 |
-| 23 | 113 | 2 | 3 |
-| 24 | 114 | 6 | 1 |
-| 25 | 115 | 5 | 1 |
 
 ---
 
@@ -229,23 +186,8 @@ ORDER BY o.order_date, o.order_id;
 * **Explanation**: An `INNER JOIN` matches rows in `orders` with corresponding rows in `customers` where `c.customer_id = o.customer_id`. Orders without a matching customer are excluded.
 * **Query Results**:
 
-| ORDER_ID | CUSTOMER_NAME | CITY | ORDER_DATE |
-| :--- | :--- | :--- | :--- |
-| 101 | Mugisha Keza | Kigali | 2026-01-05 |
-| 102 | Habimana Jean | Musanze | 2026-01-08 |
-| 103 | Mugisha Keza | Kigali | 2026-01-19 |
-| 104 | Uwase Divine | Rubavu | 2026-02-02 |
-| 105 | Manzi Eric | Huye | 2026-02-10 |
-| 106 | Habimana Jean | Musanze | 2026-02-14 |
-| 107 | Mugisha Keza | Kigali | 2026-03-01 |
-| 108 | Ishimwe Chantal | Kayonza | 2026-03-05 |
-| 109 | Uwase Divine | Rubavu | 2026-03-18 |
-| 110 | Habimana Jean | Musanze | 2026-04-02 |
-| 111 | Manzi Eric | Huye | 2026-04-15 |
-| 112 | Mugisha Keza | Kigali | 2026-04-22 |
-| 113 | Uwase Divine | Rubavu | 2026-05-06 |
-| 114 | Ishimwe Chantal | Kayonza | 2026-05-20 |
-| 115 | Habimana Jean | Musanze | 2026-06-03 |
+<img width="551" height="421" alt="image" src="https://github.com/user-attachments/assets/a1cf6035-74f2-43db-b600-6682093e6783" />
+
 
 * **Business Interpretation**: Order traffic spans major Rwandan cities (Kigali, Musanze, Rubavu, Huye, Kayonza). Customers in Kigali (Mugisha Keza) and Musanze (Habimana Jean) show the highest purchase frequency with 4 orders each.
 
@@ -269,33 +211,8 @@ ORDER BY oi.order_item_id;
 * **Explanation**: Merges `order_items` with `products` on `product_id` to evaluate item-level revenue in RWF. The calculated column `line_total_rwf` multiplies unit `price` by `quantity`.
 * **Query Results**:
 
-| ORDER_ITEM_ID | ORDER_ID | PRODUCT_NAME | CATEGORY | PRICE (RWF) | QUANTITY | LINE_TOTAL (RWF) |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | 101 | Amata 1L | Dairy | 1,500.00 | 4 | 6,000.00 |
-| 2 | 101 | Umugati | Bakery | 3,500.00 | 2 | 7,000.00 |
-| 3 | 102 | Umuceri 5kg | Grocery | 12,000.00 | 1 | 12,000.00 |
-| 4 | 102 | Fanta 1L | Beverages | 2,800.00 | 3 | 8,400.00 |
-| 5 | 103 | Amavuta 500g | Dairy | 4,250.00 | 2 | 8,500.00 |
-| 6 | 103 | Igitoki (Bunch) | Produce | 1,250.00 | 6 | 7,500.00 |
-| 7 | 104 | Amashaza 1kg | Grocery | 8,750.00 | 1 | 8,750.00 |
-| 8 | 104 | Amazi x6 | Beverages | 4,600.00 | 2 | 9,200.00 |
-| 9 | 105 | Amata 1L | Dairy | 1,500.00 | 6 | 9,000.00 |
-| 10 | 105 | Umugati | Bakery | 3,500.00 | 1 | 3,500.00 |
-| 11 | 106 | Umuceri 5kg | Grocery | 12,000.00 | 2 | 24,000.00 |
-| 12 | 107 | Fanta 1L | Beverages | 2,800.00 | 2 | 5,600.00 |
-| 13 | 107 | Amavuta 500g | Dairy | 4,250.00 | 1 | 4,250.00 |
-| 14 | 108 | Igitoki (Bunch) | Produce | 1,250.00 | 10 | 12,500.00 |
-| 15 | 108 | Amazi x6 | Beverages | 4,600.00 | 1 | 4,600.00 |
-| 16 | 109 | Amashaza 1kg | Grocery | 8,750.00 | 2 | 17,500.00 |
-| 17 | 109 | Amata 1L | Dairy | 1,500.00 | 3 | 4,500.00 |
-| 18 | 110 | Umugati | Bakery | 3,500.00 | 3 | 10,500.00 |
-| 19 | 111 | Umuceri 5kg | Grocery | 12,000.00 | 1 | 12,000.00 |
-| 20 | 111 | Fanta 1L | Beverages | 2,800.00 | 4 | 11,200.00 |
-| 21 | 112 | Amazi x6 | Beverages | 4,600.00 | 3 | 13,800.00 |
-| 22 | 112 | Igitoki (Bunch) | Produce | 1,250.00 | 4 | 5,000.00 |
-| 23 | 113 | Amavuta 500g | Dairy | 4,250.00 | 3 | 12,750.00 |
-| 24 | 114 | Amashaza 1kg | Grocery | 8,750.00 | 1 | 8,750.00 |
-| 25 | 115 | Umuceri 5kg | Grocery | 12,000.00 | 1 | 12,000.00 |
+<img width="571" height="432" alt="image" src="https://github.com/user-attachments/assets/d0406571-2bc7-4c0f-ad9e-58f02d203b6a" />
+
 
 * **Business Interpretation**: High-value staple items like Umuceri 5kg (12,000 RWF) produce significant line revenues (24,000 RWF in Order 106), while high-volume items like Igitoki (1,250 RWF per bunch, 10 units in Order 108) drive store traffic through everyday produce demand.
 
@@ -316,24 +233,8 @@ ORDER BY c.customer_id, o.order_date;
 * **Explanation**: `LEFT JOIN` retains all records from `customers` regardless of whether matching records exist in `orders`. Where no match exists, NULL values appear in `order_id` and `order_date`.
 * **Query Results**:
 
-| CUSTOMER_ID | CUSTOMER_NAME | ORDER_ID | ORDER_DATE |
-| :--- | :--- | :--- | :--- |
-| 1 | Mugisha Keza | 101 | 2026-01-05 |
-| 1 | Mugisha Keza | 103 | 2026-01-19 |
-| 1 | Mugisha Keza | 107 | 2026-03-01 |
-| 1 | Mugisha Keza | 112 | 2026-04-22 |
-| 2 | Habimana Jean | 102 | 2026-01-08 |
-| 2 | Habimana Jean | 106 | 2026-02-14 |
-| 2 | Habimana Jean | 110 | 2026-04-02 |
-| 2 | Habimana Jean | 115 | 2026-06-03 |
-| 3 | Uwase Divine | 104 | 2026-02-02 |
-| 3 | Uwase Divine | 109 | 2026-03-18 |
-| 3 | Uwase Divine | 113 | 2026-05-06 |
-| 4 | Manzi Eric | 105 | 2026-02-10 |
-| 4 | Manzi Eric | 111 | 2026-04-15 |
-| 5 | Ishimwe Chantal | 108 | 2026-03-05 |
-| 5 | Ishimwe Chantal | 114 | 2026-05-20 |
-| 6 | Niyonzima Patrick | NULL | NULL |
+<img width="412" height="432" alt="image" src="https://github.com/user-attachments/assets/fe3cc7a1-a380-4ae2-a2e5-7e6b8fdbda7f" />
+
 
 * **Business Interpretation**: Niyonzima Patrick (Customer ID 6, Rusizi) registered an account but has placed 0 orders. The supermarket team should target Niyonzima Patrick with a welcome voucher or localized campaign in Rusizi.
 
@@ -365,11 +266,8 @@ ORDER BY total_spend_rwf DESC;
 * **Explanation**: The CTE `customer_totals` aggregates total spending in RWF per customer. The main query compares each customer's spend against `AVG(total_spend_rwf)` (**47,760.00 RWF** across active customers).
 * **Query Results**:
 
-| CUSTOMER_ID | CUSTOMER_NAME | TOTAL_SPEND (RWF) |
-| :--- | :--- | :--- |
-| 2 | Habimana Jean | 66,900.00 |
-| 1 | Mugisha Keza | 57,650.00 |
-| 3 | Uwase Divine | 52,700.00 |
+<img width="352" height="271" alt="image" src="https://github.com/user-attachments/assets/70fd1ead-9086-4b6a-ac63-dd1fab1957d0" />
+
 
 * **Business Interpretation**:
   * Total Store Spend across active customers: **238,800.00 RWF**.
@@ -403,13 +301,8 @@ ORDER BY spend_rank;
 * **Explanation**: `RANK() OVER (ORDER BY total_spend_rwf DESC)` assigns a 1-based ordinal rank to each customer based on their overall contribution in RWF.
 * **Query Results**:
 
-| CUSTOMER_NAME | TOTAL_SPEND (RWF) | SPEND_RANK |
-| :--- | :--- | :--- |
-| Habimana Jean | 66,900.00 | 1 |
-| Mugisha Keza | 57,650.00 | 2 |
-| Uwase Divine | 52,700.00 | 3 |
-| Manzi Eric | 35,700.00 | 4 |
-| Ishimwe Chantal | 25,850.00 | 5 |
+<img width="403" height="323" alt="image" src="https://github.com/user-attachments/assets/a09b425c-6d5b-4659-8ff8-3dc23b9a77e5" />
+
 
 * **Business Interpretation**: Habimana Jean ranks #1 VIP customer in revenue contribution. Loyalty rewards and VIP customer service tiers should target Rank 1 to 3 spenders.
 
@@ -433,23 +326,8 @@ ORDER BY c.customer_name, order_number;
 * **Explanation**: `PARTITION BY o.customer_id` resets the counter for each customer, and `ORDER BY o.order_date` assigns `1, 2, 3...` to their orders.
 * **Query Results**:
 
-| CUSTOMER_NAME | ORDER_ID | ORDER_DATE | ORDER_NUMBER |
-| :--- | :--- | :--- | :--- |
-| Habimana Jean | 102 | 2026-01-08 | 1 |
-| Habimana Jean | 106 | 2026-02-14 | 2 |
-| Habimana Jean | 110 | 2026-04-02 | 3 |
-| Habimana Jean | 115 | 2026-06-03 | 4 |
-| Ishimwe Chantal | 108 | 2026-03-05 | 1 |
-| Ishimwe Chantal | 114 | 2026-05-20 | 2 |
-| Manzi Eric | 105 | 2026-02-10 | 1 |
-| Manzi Eric | 111 | 2026-04-15 | 2 |
-| Mugisha Keza | 101 | 2026-01-05 | 1 |
-| Mugisha Keza | 103 | 2026-01-19 | 2 |
-| Mugisha Keza | 107 | 2026-03-01 | 3 |
-| Mugisha Keza | 112 | 2026-04-22 | 4 |
-| Uwase Divine | 104 | 2026-02-02 | 1 |
-| Uwase Divine | 109 | 2026-03-18 | 2 |
-| Uwase Divine | 113 | 2026-05-06 | 3 |
+<img width="423" height="428" alt="image" src="https://github.com/user-attachments/assets/6d35243f-e0c0-4ba8-84a8-f2699c0076a9" />
+
 
 * **Business Interpretation**: Helps monitor retention metrics by tracking customer ordering sequence over time.
 
@@ -480,24 +358,8 @@ ORDER BY order_date, order_id;
 ```
 * **Explanation**: Aggregates order totals in RWF in `order_revenue` CTE, then uses `SUM(...) OVER (ORDER BY order_date, order_id ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)` to generate cumulative store earnings.
 * **Query Results**:
+<img width="390" height="426" alt="image" src="https://github.com/user-attachments/assets/d16f9b70-1552-4d20-83c8-4229a388d4bb" />
 
-| ORDER_ID | ORDER_DATE | ORDER TOTAL (RWF) | RUNNING REVENUE (RWF) |
-| :--- | :--- | :--- | :--- |
-| 101 | 2026-01-05 | 13,000.00 | 13,000.00 |
-| 102 | 2026-01-08 | 20,400.00 | 33,400.00 |
-| 103 | 2026-01-19 | 16,000.00 | 49,400.00 |
-| 104 | 2026-02-02 | 17,950.00 | 67,350.00 |
-| 105 | 2026-02-10 | 12,500.00 | 79,850.00 |
-| 106 | 2026-02-14 | 24,000.00 | 103,850.00 |
-| 107 | 2026-03-01 | 9,850.00 | 113,700.00 |
-| 108 | 2026-03-05 | 17,100.00 | 130,800.00 |
-| 109 | 2026-03-18 | 22,000.00 | 152,800.00 |
-| 110 | 2026-04-02 | 10,500.00 | 163,300.00 |
-| 111 | 2026-04-15 | 23,200.00 | 186,500.00 |
-| 112 | 2026-04-22 | 18,800.00 | 205,300.00 |
-| 113 | 2026-05-06 | 12,750.00 | 218,050.00 |
-| 114 | 2026-05-20 | 8,750.00 | 226,800.00 |
-| 115 | 2026-06-03 | 12,000.00 | 238,800.00 |
 
 * **Business Interpretation**: Store gross revenue grew steadily from 13,000 RWF on Jan 5 to **238,800.00 RWF** by June 3.
 
@@ -534,23 +396,8 @@ ORDER BY customer_name, order_date;
   * `ROUND(order_date - previous_order_date)` evaluates integer day differences in Oracle PL/SQL.
 * **Query Results**:
 
-| CUSTOMER_NAME | ORDER_ID | ORDER_DATE | PREVIOUS_ORDER_DATE | DAYS_SINCE_PREVIOUS |
-| :--- | :--- | :--- | :--- | :--- |
-| Habimana Jean | 102 | 2026-01-08 | NULL | NULL |
-| Habimana Jean | 106 | 2026-02-14 | 2026-01-08 | 37 |
-| Habimana Jean | 110 | 2026-04-02 | 2026-02-14 | 47 |
-| Habimana Jean | 115 | 2026-06-03 | 2026-04-02 | 62 |
-| Ishimwe Chantal | 108 | 2026-03-05 | NULL | NULL |
-| Ishimwe Chantal | 114 | 2026-05-20 | 2026-03-05 | 76 |
-| Manzi Eric | 105 | 2026-02-10 | NULL | NULL |
-| Manzi Eric | 111 | 2026-04-15 | 2026-02-10 | 64 |
-| Mugisha Keza | 101 | 2026-01-05 | NULL | NULL |
-| Mugisha Keza | 103 | 2026-01-19 | 2026-01-05 | 14 |
-| Mugisha Keza | 107 | 2026-03-01 | 2026-01-19 | 41 |
-| Mugisha Keza | 112 | 2026-04-22 | 2026-03-01 | 52 |
-| Uwase Divine | 104 | 2026-02-02 | NULL | NULL |
-| Uwase Divine | 109 | 2026-03-18 | 2026-02-02 | 44 |
-| Uwase Divine | 113 | 2026-05-06 | 2026-03-18 | 49 |
+<img width="504" height="434" alt="image" src="https://github.com/user-attachments/assets/d8823173-f868-495f-b0d4-19cf1fd0e330" />
+
 
 * **Business Interpretation**:
   * Repeat order interval averages ~48 days across active repeat customers.
